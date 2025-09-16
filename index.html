@@ -1,37 +1,84 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTEGRA MERIDIAN CORP</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9fafb; color: #1f2937; }
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 1.5rem; }
+    nav a { margin-left: 1rem; text-decoration: none; color: #374151; }
+    nav a:hover { text-decoration: underline; }
+    section { background: #fff; margin: 2rem auto; padding: 2rem; border-radius: 1rem; max-width: 900px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    h2 { margin-top: 0; color: #111827; }
+    .btn { display: inline-block; padding: 0.5rem 1rem; margin-top: 1rem; background: #4f46e5; color: #fff; border-radius: 0.5rem; text-decoration: none; }
+    .btn:hover { background: #4338ca; }
+    footer { text-align: center; font-size: 0.9rem; color: #6b7280; margin: 2rem 0; }
+  </style>
+  <script>
+    if (window.location.hostname === "www.integrameridiancorp.com") {
+      window.location.href = "https://integrameridiancorp.com" + window.location.pathname;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>INTEGRA MERIDIAN CORP</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#technical">API / Tech</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-export default function IntegraMeridianPage() {
-  return (
-    <div className="min-h-screen bg-gray-50 text-slate-800">
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: `
-          if (window.location.hostname === "www.integrameridiancorp.com") {
-            window.location.href = "https://integrameridiancorp.com" + window.location.pathname;
-          }
-        `}} />
-      </head>
+  <section id="intro">
+    <h2>USPS API Integration • Labels • Returns</h2>
+    <p>INTEGRA MERIDIAN CORP integrates directly with USPS API for shipping solutions. This page provides our company and developer contact details for verification and onboarding.</p>
+    <ul>
+      <li>In-house / custom API integration (not using vendors)</li>
+      <li>Outbound & return label generation</li>
+      <li>Domestic & International support</li>
+    </ul>
+    <a href="#contact" class="btn">Contact Developer</a>
+  </section>
 
-      <header className="bg-white shadow">
-        <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-600 to-sky-500 flex items-center justify-center text-white font-bold">IM</div>
-            <div>
-              <h1 className="text-xl font-semibold">INTEGRA MERIDIAN CORP</h1>
-              <p className="text-sm text-slate-500">Reliable shipping & logistics — API integration ready</p>
-            </div>
-          </div>
-          <nav className="text-sm text-slate-600 space-x-4 hidden md:flex">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#services" className="hover:underline">Services</a>
-            <a href="#technical" className="hover:underline">API / Tech</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
-        </div>
-      </header>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide reliable shipping and logistics solutions with direct API connections. Our platform creates outbound and return labels programmatically, ensuring smooth and auditable workflows.</p>
+  </section>
 
-      <main className="max-w-5xl mx-auto px-6 py-12">
-        {/* Rest of the sections remain unchanged */}
-      </main>
-    </div>
-  );
-}
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Label Generation: Outbound & return (domestic & international)</li>
+      <li>Rate Calculation: Real-time USPS rates</li>
+      <li>Tracking & Notifications</li>
+      <li>Returns Management</li>
+    </ul>
+  </section>
+
+  <section id="technical">
+    <h2>API / Technical Details</h2>
+    <p>Below are the key USPS integration details for account verification:</p>
+    <ul>
+      <li><strong>CRID:</strong> (add here)</li>
+      <li><strong>Outbound MID:</strong> (add here)</li>
+      <li><strong>Returns MID:</strong> (add here)</li>
+      <li><strong>EPS Account:</strong> (add here)</li>
+      <li><strong>Consumer Key:</strong> (add here)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Obsheakovii@mail.ru">Obsheakovii@mail.ru</a></p>
+    <p>Phone: (407) 271-7973</p>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear());</script> INTEGRA MERIDIAN CORP — Built for USPS API onboarding
+  </footer>
+</body>
+</html>
